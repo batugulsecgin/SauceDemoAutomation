@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions", // Java kodlarının (step defs) dizin yolu
 
         tags = "@edge", // Sadece bu tag'e sahip senaryoları çalıştırır
-                       // Kullanılabilir tag'ler; @smoke , @e2e , @cart , @negative .
+                       // Kullanılabilir tag'ler; @smoke , @e2e , @cart , @negative , @edge
 
         dryRun = false // Eksik adım olup olmadığını kontrol etmek için true, testi gerçekten koşmak için false olmalıdır
 )
