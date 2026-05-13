@@ -21,6 +21,8 @@ public class E2EPurchaseStepDefs {
             inventoryPage.backpackAddButton.click();
         } else if (urunAdi.contains("Bike Light")) {
             inventoryPage.bikeLightAddButton.click();
+        } else if (urunAdi.contains("Onesie")) {
+            inventoryPage.onesieAddButton.click(); // Yeni eklenen ürün
         }
     }
 
@@ -36,10 +38,11 @@ public class E2EPurchaseStepDefs {
         } else if (buttonText.equals("Finish")) {
             checkoutPage.finishButton.click();
         } else if (buttonText.equals("Continue Shopping")) {
-            cartPage.continueShoppingButton.click(); // Yeni eklediğimiz koşul
+            cartPage.continueShoppingButton.click();
+        } else if (buttonText.equals("Cancel")) {
+            checkoutPage.cancelButton.click(); // Yeni eklenen buton
         } else {
-            // QA Best Practice: Eğer tanımlanmayan bir buton gelirse testin sessizce geçmesini engellemek için hata fırlatıyoruz
-            throw new RuntimeException("Tanımsız buton texti gönderildi: " + buttonText);
+            throw new RuntimeException("Tanımsız buton texti: " + buttonText);
         }
     }
 
@@ -55,5 +58,12 @@ public class E2EPurchaseStepDefs {
     public void mesajini_gorerek_siparisi_dogrular(String expectedMessage) {
         Assert.assertEquals(expectedMessage, checkoutPage.successMessage.getText());
         Driver.closeDriver();
+    }
+    @And("{string} urununu siler")
+    public void urununu_siler(String urunAdi) {
+        // İptal ettikten sonra anasayfaya (Inventory) dönüyoruz, oradan siliyoruz
+        if (urunAdi.contains("Bike Light")) {
+            inventoryPage.removeBikeLightButton.click();
+        }
     }
 }

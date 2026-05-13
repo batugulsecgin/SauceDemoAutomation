@@ -24,4 +24,18 @@ public class InventoryPage {
 
     @FindBy(xpath = "//span[@class='title']")
     public WebElement productsTitle;
+
+    // Yeni eklenen ürün ve silme butonu
+    @FindBy(id = "add-to-cart-sauce-labs-onesie")
+    public WebElement onesieAddButton;
+
+    @FindBy(id = "remove-sauce-labs-bike-light")
+    public WebElement removeBikeLightButton;
+
+    // Logout işlemleri için hamburger menü elementleri
+    @FindBy(id = "react-burger-menu-btn")
+    public WebElement burgerMenu;
+
+    @FindBy(id = "logout_sidebar_link")
+    public WebElement logoutLink;
 }

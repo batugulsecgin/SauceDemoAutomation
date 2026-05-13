@@ -27,4 +27,8 @@ public class CheckoutPage {
 
     @FindBy(className = "complete-header")
     public WebElement successMessage;
+
+    // Özet sayfasındaki iptal butonu
+    @FindBy(id = "cancel")
+    public WebElement cancelButton;
 }
