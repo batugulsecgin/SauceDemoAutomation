@@ -45,7 +45,7 @@ The framework strictly adheres to the **Page Object Model (POM)** design pattern
 Open the project in your IDE and reload the pom.xml to download all Maven dependencies.
 
 3. Execute Tests:
-Navigate to src/test/java/runners/Runner.java and run the class.
+Navigate to src/test/java/runners/Runner.java and run the class. By changing the "tags" parameter, you can run different cases.
 
 ⚠️ Important Note for Turkish Locale Users:
 If your operating system is in Turkish, FreeMarker (used by ExtentReports) might encounter a locale-based character conversion issue (the "I-ı" bug). To fix this, add the following VM Options to your run configuration before executing:
