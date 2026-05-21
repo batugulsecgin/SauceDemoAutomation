@@ -28,7 +28,7 @@ The framework strictly adheres to the **Page Object Model (POM)** design pattern
 2. **E2E Purchase Flow (`@e2e`):** Simulates a complete customer journey from logging in, adding multiple items to the cart, filling out checkout information, and verifying the order completion message.
 3. **Cart Management (`@cart`):** Validates dynamic cart updates by adding items, navigating to the cart, removing specific items, and ensuring the cart badge synchronizes correctly.
 4. **Data-Driven Negative Login (`@negative`):** Uses Cucumber `Scenario Outline` and `Examples` tables to execute multiple negative login attempts (locked-out user, wrong password, empty fields) and asserts the specific error messages for each case.
-
+5. **Edge-Case (`@edge`):** Contains an edge case that adds and then deletes an item from the cart.
 ## ⚙️ Setup and Execution
 
 ### Prerequisites
