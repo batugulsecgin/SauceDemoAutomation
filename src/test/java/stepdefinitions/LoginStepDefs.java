@@ -36,7 +36,7 @@ public class LoginStepDefs {
         // JUnit Assert kullanarak beklenen durum ile gerçekleşen durumu doğruluyoruz
         Assert.assertTrue("Başarılı giriş doğrulanamadı!", loginPage.productsTitle.isDisplayed());
 
-        // Test bitiminde tarayıcıyı kapatıyoruz
+        // Test bitiminde istersek tarayıcıyı kapatabiliriz.
         Driver.closeDriver();
     }
     @When("kullanici kullanici adi alanina {string} yazar")
