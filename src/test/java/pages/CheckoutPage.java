@@ -31,4 +31,16 @@ public class CheckoutPage {
     // Özet sayfasındaki iptal butonu
     @FindBy(id = "cancel")
     public WebElement cancelButton;
+
+    // ====== YENİ EKLENEN ELEMENTLER ======
+
+    // Checkout Step Two (özet) sayfasındaki fiyat satırları
+    @FindBy(className = "summary_subtotal_label")
+    public WebElement itemTotalLabel;   // Örn: "Item total: $29.99"
+
+    @FindBy(className = "summary_tax_label")
+    public WebElement taxLabel;         // Örn: "Tax: $2.40"
+
+    @FindBy(className = "summary_total_label")
+    public WebElement totalLabel;       // Örn: "Total: $32.39"
 }
