@@ -3,7 +3,7 @@
 ## 🎯 Overview
 This repository contains a robust, automated End-to-End (E2E) testing framework built for the [SauceDemo](https://www.saucedemo.com/) e-commerce web application. The project is designed using a **Behavior-Driven Development (BDD)** approach, ensuring that test scenarios are readable, maintainable, and aligned with real-world business requirements.
 
-![Görüntülenme Sayısı](https://komarev.com/ghpvc/?username=batugulsecgin&color=blue)
+![Proje Görüntülenmesi](https://komarev.com/ghpvc/?username=batugulsecgin-saucedemoautomation&color=blue)
 
 ## 🛠️ Tech Stack & Tools
 - **Programming Language:** Java 21
